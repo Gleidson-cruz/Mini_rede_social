@@ -1,0 +1,88 @@
+/* Reset de estilos padrão */
+body, h1, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do corpo */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Cor de fundo da página */
+  font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+/* Estilo do container */
+#container {
+  background-color: #fff; /* Cor de fundo da div container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  text-align: center;
+}
+
+/* Estilo do cabeçalho */
+#header {
+  margin-bottom: 20px;
+}
+
+#header h1 {
+  font-size: 36px;
+  color: #333; /* Cor do título principal */
+}
+
+#header h4 {
+  font-size: 18px;
+  color: #666; /* Cor do subtítulo */
+}
+
+/* Estilo dos campos de texto */
+.campo {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Cor da borda dos campos */
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilo do botão de Entrar */
+#button {
+  width: 40%;
+  padding: 10px;
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#button:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo do link de Cadastre-se */
+#btcd a {
+  display: flex;
+  padding: 10px;
+  background-color: #32CD32; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+#btcd a:hover {
+  background-color: #228B22; /* Cor de fundo do botão ao passar o mouse */
+}
+
+#vz {
+  border: 0.5px solid #ccc;
+  margin: 15px;
+}
