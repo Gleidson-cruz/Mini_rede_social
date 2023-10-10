@@ -67,18 +67,18 @@ body {
 }
 
 /* Estilo do link de Cadastre-se */
-#btcd a {
-  display: flex;
+#btcadastro a {
+
   padding: 10px;
   background-color: #32CD32; /* Cor de fundo do botão */
   color: #fff; /* Cor do texto do botão */
-  border: none;
+  border: 0;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
 
-#btcd a:hover {
+#btcadastro a:hover {
   background-color: #228B22; /* Cor de fundo do botão ao passar o mouse */
 }
 

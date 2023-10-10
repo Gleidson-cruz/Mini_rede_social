@@ -1,0 +1,65 @@
+body, h1, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; 
+  font-family: Arial, sans-serif; 
+}
+
+#container {
+  max-width: 376px;
+  max-height: 390px;
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  text-align: center;
+  padding: -20px;
+}
+
+.campo {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#button {
+  width: 40%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#button:hover {
+  background-color: #0056b3; 
+}
+
+#header {
+  margin-bottom: 20px;
+}
+
+#header h1 {
+  font-size: 36px;
+  color: #333; /* Cor do título principal */
+}
+
+#header h4 {
+  font-size: 18px;
+  color: #666; /* Cor do subtítulo */
+}
