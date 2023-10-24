@@ -26,11 +26,15 @@ if (empty($_nome) || empty($_sobrenome) || empty($_email) || empty($_senha) || e
 
     if ($_senha === $_confirmar_senha) {
       header("refresh:3;url=/index.html");
+      
+      $_conteudo = '<?php' . PHP_EOL;
+        $_conteudo .= '$_premail = "' . $_POST["email"] . '";' . PHP_EOL;
+        $_conteudo .= '$_prsenha = "' . $_POST["senha"] . '";' . PHP_EOL;
+        $_conteudo .= '$_prnome = "' . $_POST["nome"] . '";' . PHP_EOL;
+        $_conteudo .= '$_prsobrenome = "' . $_POST["sobrenome"] . '";' . PHP_EOL;
+        $_conteudo .= '?>';
 
-      $_userdb = fopen("/home/runner/Miniredesocial/db/$_email.sql", "a");
-      $_db = "INSERT INTO usuario (nome, sobrenome, email, senha) VALUES ('$_nome', '$_sobrenome', '$_email', '$_senha');\n";
-      fwrite($_userdb, $_db);
-      fclose($_userdb);
+       file_put_contents("/home/runner/Miniredesocial/db/$_email.php", $_conteudo);
 
     echo '<!DOCTYPE html>
         <html>
