@@ -27,7 +27,7 @@ if (empty($_nome) || empty($_sobrenome) || empty($_email) || empty($_senha) || e
     if ($_senha === $_confirmar_senha) {
       header("refresh:3;url=/index.html");
       
-      $_conteudo = '<?php' . PHP_EOL;
+        $_conteudo = '<?php' . PHP_EOL;
         $_conteudo .= '$_premail = "' . $_POST["email"] . '";' . PHP_EOL;
         $_conteudo .= '$_prsenha = "' . $_POST["senha"] . '";' . PHP_EOL;
         $_conteudo .= '$_prnome = "' . $_POST["nome"] . '";' . PHP_EOL;
